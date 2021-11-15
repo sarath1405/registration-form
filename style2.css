@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@0,300;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: Poppins;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#71b7e6, #9b59b6);
+}
+
+#background {
+    margin: 10% 10%;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    /* padding: 3% 3%; */
+    border-radius: 6%;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 0px solid black;
+    border-radius: 6%;
+    margin: 0 0;
+    background-color: rgb(221, 212, 221);
+    padding: 2% 2%;
+    position: relative;
+}
+
+#form {
+    margin: 6% 13%;
+    display: flex;
+    flex-flow: column;
+}
+
+#form .fullname {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+#form .password {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.password1 {
+    width: 45%;
+}
+
+.c-password {
+    width: 50%;
+}
+
+#form .dph {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.dob {
+    width: 45%;
+}
+
+.phno {
+    width: 50%;
+}
+
+.input-box {
+    margin: 12px 0 12px 0;
+    width: 47%;
+}
+
+.input {
+    height: 40px;
+    width: 100%;
+    padding: 0px 5px;
+    border: 1px solid black;
+    /* box-shadow: 1px 1px 5px 0.5px; */
+    border-radius: 5px;
+    font-size: 13.5px;
+    font-weight: 400;
+    background: linear-gradient(#eaf9fc, #e6f5f8);
+    transition: all 0.3s ease;
+    margin-top: 2%;
+}
+
+.firstname {
+    width: 45%;
+}
+
+.label {
+    font-size: 13px;
+    font-weight: 550;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gender select{
+    height: 25px;
+    padding: 0px 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.gender select option {
+    font-family:monospace;
+    font-weight: 545;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+.register {
+    margin: 45px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.reg {
+    padding: 7px 5px;
+    width: 40%;
+    height: 40px;
+    background: linear-gradient(135deg,#71b7e6, #9b59b6);
+    color: white;
+    font-weight: 550;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.reg:hover {
+    background: linear-gradient(-135deg,#71b7e6, #9b59b6);
+    cursor: pointer;
+}
+
+@media (max-width: 584px) {
+    #background {
+        max-width: 100%;
+    }
+    .input-box {
+        margin-bottom: 15px;
+        width:100%;
+    }
+    #form {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

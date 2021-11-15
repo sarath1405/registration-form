@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="main2.js"></script>
+</head>
+<body>
+    <div id="error"></div>
+    <main id="background">
+        <div class="title">Registration</div>
+        <form id="form" action="#">
+            <div class="fullname">
+                <div class="firstname input-box">
+                    <label class="label" for="firstname">FirstName:</label>
+                    <input class="input fn" type="text" placeholder="FirstName" required>
+                </div>
+                <div class="laststname input-box">
+                    <label class="label" for="lastname">LastName:</label>
+                    <input class="input ln" type="text" placeholder="LastName" required>
+                </div>
+            </div>
+            <div class="email input-box">
+                <label class="label" for="email">Email:</label>
+                <input class="input em" type="email" placeholder="Email" required>
+            </div>
+           <div class="dph">
+                <div class="dob input-box">
+                    <label class="label" for="dob">Date Of Birth:</label>
+                    <input class="input birth" type="date" required>
+                </div>
+                <div class="phno input-box">
+                    <label class="label" for="phno">Phone Number:</label>
+                    <input class="input mobno" type="text" placeholder="Phone Number" required> 
+                </div>
+           </div>
+            <div class="password">
+                <div class="password1 input-box">
+                    <label class="label" for="password">Password:</label>
+                    <input class="input pass" type="password" placeholder="Password" required>
+                </div>
+                <div class="c-password input-box">
+                    <label class="label" for="c-password">Confirm Password:</label>
+                    <input class="input cpass" type="Password" placeholder="confirm your Password" required>
+                </div>
+            </div>
+            <div class="gender input-box">
+                <label class="label" for="gender">Gender:</label>
+                <select name="gender" id="">
+                    <option value="1">none</option>
+                    <option value="2">Male</option>
+                    <option value="3">Female</option>
+                    <option value="4">Other</option>
+                </select>
+            </div>
+            <div class="register">
+                <input class="reg" type="submit" value="Register">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
