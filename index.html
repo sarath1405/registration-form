@@ -8,18 +8,10 @@
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <script>  
-        function validate(){  
-        var a = document.getElementsByClassName('gender')
-        if(a.value == 1) {
-            alert("gender cannot be none!")
-            return false;
-        }
-        </script>  
     <div id="error"></div>
     <main id="background">
         <div class="title">Registration Form</div>
-        <form id="form" name="r-form" action="#" onsubmit="return validate()">
+        <form id="form" action="#" method="get">
             <div class="fullname">
                 <div class="firstname input-box">
                     <label class="label" for="firstname">FirstName:</label>
@@ -41,22 +33,22 @@
                 </div>
                 <div class="phno input-box">
                     <label class="label" for="phno">Phone Number:</label>
-                    <input class="input mobno" type="text" placeholder="Phone Number" required> 
+                    <input class="input" id="ph-no" type="text" placeholder="Phone Number" required> 
                 </div>
            </div>
             <div class="password">
                 <div class="password1 input-box">
                     <label class="label" for="password">Password:</label>
-                    <input class="input pass" name="pass1" type="password" placeholder="Password" required>
+                    <input class="input" id="pass" name="pass1" type="password" placeholder="Password" required>
                 </div>
                 <div class="c-password input-box">
                     <label class="label" for="c-password">Confirm Password:</label>
-                    <input class="input cpass" name="pass2" type="Password" placeholder="confirm your Password" required>
+                    <input class="input" id="pass1" name="pass2" type="Password" placeholder="confirm your Password" required>
                 </div>
             </div>
             <div class="gender input-box">
                 <label class="label" for="gender">Gender:</label>
-                <select name="gender" id="" required>
+                <select id="gen" name="gender" id="" required>
                     <option value="1">none</option>
                     <option value="2">Male</option>
                     <option value="3">Female</option>
@@ -64,9 +56,10 @@
                 </select>
             </div>
             <div class="register">
-                <input class="reg" type="submit" value="Register">
+                <input id="submit" type="submit" value="Register">
             </div>
         </form>
     </main>
+    <script src="main2.js"></script>
 </body>
 </html>

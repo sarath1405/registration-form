@@ -126,7 +126,7 @@ body {
     justify-content: center;
 }
 
-.reg {
+#submit {
     padding: 7px 5px;
     width: 40%;
     height: 40px;
@@ -140,7 +140,7 @@ body {
     border-radius: 5px;
 }
 
-.reg:hover {
+#submit:hover {
     background: linear-gradient(-135deg,#71b7e6, #9b59b6);
     cursor: pointer;
 }
